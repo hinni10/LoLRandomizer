@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>LoL Randomizer</title>
 	<meta http-equiv="Content-type" content="text/html; charset=UTF-8"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="script.js"></script>
@@ -8,6 +9,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="stylesheet.css">
+	<link rel="icon" href="icon.ico">
 </head>
 <body>
 <div id="backgroundImage"></div>
@@ -27,7 +29,7 @@
 				</select><br>
 				<label>
 					<input type="radio" name="roles" value="off" checked="checked">
-					Roles Off
+					Roles Off   
 				</label>
 
 				<label>
@@ -42,8 +44,8 @@
 			</div>
 			<br><br>
 
-			<input type="button" name="randomize" value="Randomize" class="btn btn-primary" onclick="randomizeButtonClicked()">
-			<br><br>
+			<input type="button" name="randomize" value="Randomize" class="btn btn-primary" onclick="randomizeButtonClicked()"><br><br>
+			<p id="timesRandomized"></p>
 
 			<div id="randomized teams">
 				<table id="teamsTable" style="width:50%" align="center" class="table table-bordered">

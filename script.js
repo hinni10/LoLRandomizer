@@ -1,6 +1,7 @@
 var players = [];
 var roles = ["Top", "", "Jungle", "", "Mid", "", "Adc", "", "Support"];
 var numberOfPlayersSelected = 10;
+var timesRandomized = 0;
 
 $( document ).ready(function() {
         createInputsFromPlayersSelected(numberOfPlayersSelected);
@@ -39,7 +40,8 @@ function randomizeButtonClicked() {
 	}
 	shufflePlayers(players);
 	fillTable();
-
+	timesRandomized += 1;
+	$('#timesRandomized').html("Times randomized: " + timesRandomized);
 }
 
 function fillTable() {
